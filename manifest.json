@@ -1,0 +1,41 @@
+{
+  "name": "Open-close Extension",
+  "description": "Open and close your tabs groups with one click!",
+  "version": "0.1",
+  "manifest_version": 3,
+
+  "action": {
+    "default_icons": {
+      "16": "assets/icon16.png",
+      "32": "assets/icon32.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Open-close Extension"
+  },
+
+  "background": { "service_worker": "background.js" },
+
+  "icons": {
+    "16": "assets/icon16.png",
+    "32": "assets/icon32.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F"
+      },
+      "description": "Opens popup.html"
+    }
+  },
+
+  "permissions": ["tabs"],
+
+  "incognito": "split",
+
+  "author": "Mark Kozlov"
+}
